@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+*{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+body{background-color: rgb(27, 27, 27); 
+}
+
+     h1,h2{color: darkgray;
+     }
+
+     h1{ font-size: 2em;
+     }
+
+     h2{ font-size: 1.5em;
+     }
+
+     p{font-size: 1.2em;
+      line-height: 1.4em;
+     }
+
+ nav,footer{background-color: rgb(0, 0, 0);
+    padding-top: 2%;
+    size-adjust: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    }
+    
+   
+   footer div{display: flex;
+      width: auto;
+      height: auto;
+      }
+    
+     nav ul{list-style: none;
+     display: flex;
+     justify-content: space-between;
+     } 
+
+     nav ul li{ display: flex;
+     margin-right: 10%;
+     }
+
+         nav ul li a{text-decoration: none;
+           color: antiquewhite;
+           font-size: 0.7em;
+           display: flex}
+
+         nav ul li form{ display: flex
+          margin-bottom 2%;
+          font-size: 0.7em;
+         }
+
+            header img{ width: 100%;
+            }
+
+            main{margin-left: 2%;
+           }
+
+           .continua-viendo { padding: 6px 30px;
+            display: flex;
+            justify-items: left;}
+           
+              .continua-viendo figure{ margin-left: 10px;}
+           
+              .continua-viendo figure:hover {cursor: pointer;}
+           
+              .continua-viendo figure figcaption { color: antiquewhite;
+            padding-left: 2%;
+            font-size: 1em;}
+        
+     .text-center{text-align: center;
+    }
+
+     .text-left{text-align: left;
+    }
+
+     .text-color{
+        color: antiquewhite;
+        font-size: 1.2em;
+      }
+      .cuestionario { display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 100px 200px 200px ;
+         grid-template-areas: 
+         "contacto faqs"
+         "informacion preguntas"
+         "informacion preguntas";}
+         
+       .cuestionario .contacto { grid-area: contacto;
+         padding-left: 20%;
+         margin-top: 10%;
+       }
+   
+       .cuestionario .informacion { grid-area: informacion;
+         margin-top: 5%;
+         padding-left: 20%;
+       }
+   
+       .cuestionario .faqs { grid-area: faqs;
+         margin-top: 10%;
+         font-size: 1.2em;
+       }
+   
+       .cuestionario .preguntas { grid-area: preguntas;
+         padding-right: 20%;
+         margin-top: 5%;
+         display: flex;
+         justify-content: center;
+         align-content: center;
+       }
+       @media (min-width: 460px) { 
+         .cuestionario { display: flex;
+         flex-wrap: wrap;}
+         
+       }
